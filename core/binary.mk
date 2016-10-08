@@ -265,6 +265,7 @@ my_cppflags := $(my_cpp_std_version) $(my_cppflags)
 ifeq ($(SDCLANG),true)
     ifeq ($(my_sdclang),)
         my_sdclang := true
+        include $(BUILD_SYSTEM)/benzo_opts.mk
     endif
 endif
 
