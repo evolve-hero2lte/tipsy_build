@@ -24,7 +24,7 @@ Invoke ". build/envsetup.sh" from your shell to add the following functions to y
 EOF
 "tipsyremote: Add a git remote for matching TIPSY repository"
 
-    __print_slim_functions_help
+    __print_tipsy_functions_help
 
 cat <<EOF
 
