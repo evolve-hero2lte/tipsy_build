@@ -2235,18 +2235,28 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(TIPSY_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(TIPSY_TARGET_PACKAGE) > $(TIPSY_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_SLIM}" "${CL_SLIM}
-	@echo -e ${CL_SLIM}"                              _______________________________________________  "${CL_SLIM}
-	@echo -e ${CL_SLIM}"                             /                                  slimroms.org | "${CL_SLIM}
-	@echo -e ${CL_SLIM}"                            /   _____________________________________________| "${CL_SLIM}
-	@echo -e ${CL_SLIM}"                           /   /                                               "${CL_SLIM}
-	@echo -e ${CL_SLIM}"                          /   /  _  _      "${CL_SGRY}" ______                             "${CL_SLIM}
-	@echo -e ${CL_SLIM}"                         /   /  | |(_)     "${CL_SGRY}"(_____ \                            "${CL_SLIM}
-	@echo -e ${CL_SLIM}"                        /   /   | | _ _____ "${CL_SGRY}"_____) )___  _____  ___            "${CL_SLIM}
-	@echo -e ${CL_SLIM}"  _____________________/   /    | || |     |"${CL_SGRY}"  __  // _ \|     |/___)           "${CL_SLIM}
-	@echo -e ${CL_SLIM}" |                        /     | || | | | |"${CL_SGRY}" |  \ \ |_| | | | |___ |           "${CL_SLIM}
-	@echo -e ${CL_SLIM}" |_______________________/       \_)_|_|_|_|"${CL_SGRY}"_|   |_\___/|_|_|_(___/            "${CL_SLIM}
-	@echo -e ${CL_SLIM}" "${CL_SLIM}
+	@echo -e ${CL_YLW}"                                 "${CL_YLW}
+	@echo -e ${CL_YLW}"           _, . '__ .            "${CL_YLW}
+	@echo -e ${CL_YLW}"          '_(_0o),(__)o().       "${CL_YLW}
+	@echo -e ${CL_YLW}"        ,o(__),_)o(_)O,(__)o     "${CL_YLW}
+	@echo -e ${CL_YLW}"      o(_,-o(_ )(),(__(_)oO)_    "${CL_YLW}
+	@echo -e ${CL_YLW}"      .O(__)o,__).(_ )o(_)Oo_)   "${CL_YLW}
+	@echo -e ${CL_YLW}"  .----|   |   |   |   |   |_)0  "${CL_YLW}
+	@echo -e ${CL_YLW}" /  .--|   |   |   |   |   |,_)  "${CL_YLW}
+	@echo -e ${CL_YLW}"|  /   |   |   |   |   |   |o(_) "${CL_YLW}
+	@echo -e ${CL_YLW}"|  |   |   |   |   |   |   |_/`) "${CL_YLW}
+	@echo -e ${CL_YLW}"|  |   |   |   |   |   |   |O_)  "${CL_YLW}
+	@echo -e ${CL_YLW}"|  |   |   |   |   |   |   |     "${CL_YLW}
+	@echo -e ${CL_YLW}"|  '   |   |   |   |   |   |     "${CL_YLW}
+	@echo -e ${CL_YLW}" '  '--|   |   |   |   |   |     "${CL_YLW}
+	@echo -e ${CL_YLW}"  '----|   |   |   |   |   |     "${CL_YLW}
+	@echo -e ${CL_YLW}"       |   |   |   |   |   |     "${CL_YLW}
+	@echo -e ${CL_YLW}"       "   "   "   "   "   "     "${CL_YLW}
+	@echo -e ${CL_YLW}"        `""""""""""""""""""      "${CL_YLW}
+	@echo -e ${CL_YLW}"    Congratz, u just got Tipsy!  "${CL_YLW}
+	@echo -e ${CL_YLW}"             G   Z   R           "${CL_YLW}
+	@echo -e ${CL_YLW}"                                 "${CL_YLW}
+	@echo -e ${CL_CYN}"Package Complete: $(TIPSY_TARGET_PACKAGE)"${CL_CYN}${CL_RST}
 
 endif    # build_ota_package
 # -----------------------------------------------------------------
