@@ -2235,27 +2235,33 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 bacon: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(TIPSY_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(TIPSY_TARGET_PACKAGE) > $(TIPSY_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_YLW}"                                 "${CL_YLW}
-	@echo -e ${CL_YLW}"           _, . '__ .            "${CL_YLW}
-	@echo -e ${CL_YLW}"          '_(_0o),(__)o().       "${CL_YLW}
-	@echo -e ${CL_YLW}"        ,o(__),_)o(_)O,(__)o     "${CL_YLW}
-	@echo -e ${CL_YLW}"      o(_,-o(_ )(),(__(_)oO)_    "${CL_YLW}
-	@echo -e ${CL_YLW}"      .O(__)o,__).(_ )o(_)Oo_)   "${CL_YLW}
-	@echo -e ${CL_YLW}"  .----|   |   |   |   |   |_)0  "${CL_YLW}
-	@echo -e ${CL_YLW}" /  .--|   |   |   |   |   |,_)  "${CL_YLW}
-	@echo -e ${CL_YLW}"|  /   |   |   |   |   |   |o(_) "${CL_YLW}
-	@echo -e ${CL_YLW}"|  |   |   |   |   |   |   |_/`) "${CL_YLW}
-	@echo -e ${CL_YLW}"|  |   |   |   |   |   |   |O_)  "${CL_YLW}
-	@echo -e ${CL_YLW}"|  |   |   |   |   |   |   |     "${CL_YLW}
-	@echo -e ${CL_YLW}"|  '   |   |   |   |   |   |     "${CL_YLW}
-	@echo -e ${CL_YLW}" '  '--|   |   |   |   |   |     "${CL_YLW}
-	@echo -e ${CL_YLW}"  '----|   |   |   |   |   |     "${CL_YLW}
-	@echo -e ${CL_YLW}"       |   |   |   |   |   |     "${CL_YLW}
-	@echo -e ${CL_YLW}"       "   "   "   "   "   "     "${CL_YLW}
-	@echo -e ${CL_YLW}"        `""""""""""""""""""      "${CL_YLW}
-	@echo -e ${CL_YLW}"    Congratz, u just got Tipsy!  "${CL_YLW}
-	@echo -e ${CL_YLW}"             G   Z   R           "${CL_YLW}
-	@echo -e ${CL_YLW}"                                 "${CL_YLW}
+	@echo -e ${CL_YLW}"                                           "${CL_YLW}
+	@echo -e ${CL_YLW}"                     .sssssssss.           "${CL_YLW}
+	@echo -e ${CL_YLW}"                .sssssssssssssssssss       "${CL_YLW}
+	@echo -e ${CL_YLW}"              ssssssssssssssssssssssss     "${CL_YLW}
+	@echo -e ${CL_YLW}"           ssssssssssssssssssssssssssss    "${CL_YLW}
+	@echo -e ${CL_YLW}"            @@sssssssssssssssssssssss@ss   "${CL_YLW}
+	@echo -e ${CL_YLW}"            |s@@@@sssssssssssssss@@@@s|s   "${CL_YLW}
+	@echo -e ${CL_YLW}"     _______|sssss@@@@@sssss@@@@@sssss|s   "${CL_YLW}
+	@echo -e ${CL_YLW}"    /         sssssssss@sssss@sssssssss|s  "${CL_YLW}
+	@echo -e ${CL_YLW}"   /  .------+.ssssssss@sssss@ssssssss.|   "${CL_YLW}
+	@echo -e ${CL_YLW}"  /  /       |...sssssss@sss@sssssss...|   "${CL_YLW}
+	@echo -e ${CL_YLW}" |  |        |.......sss@sss@ssss......|   "${CL_YLW}
+	@echo -e ${CL_YLW}" |  |        |..........s@ss@sss.......|   "${CL_YLW}
+	@echo -e ${CL_YLW}" |  |        |...........@ss@..........|   "${CL_YLW}
+	@echo -e ${CL_YLW}"  \  \       |............ss@..........|   "${CL_YLW}
+	@echo -e ${CL_YLW}"   \  '------+...........ss@...........|   "${CL_YLW}
+	@echo -e ${CL_YLW}"    \________ .........................|   "${CL_YLW}
+	@echo -e ${CL_YLW}"             |.........................|   "${CL_YLW}
+	@echo -e ${CL_YLW}"            /...........................\  "${CL_YLW}
+	@echo -e ${CL_YLW}"           |.............................| "${CL_YLW}
+	@echo -e ${CL_YLW}"              |.......................|    "${CL_YLW}
+	@echo -e ${CL_YLW}"                  |...............|        "${CL_YLW}
+	@echo -e ${CL_YLW}"                    ____________           "${CL_YLW}
+	@echo -e ${CL_YLW}"                                           "${CL_YLW}
+	@echo -e ${CL_YLW}"             Congratz, u just got Tipsy!   "${CL_YLW}
+	@echo -e ${CL_YLW}"                      G   Z   R            "${CL_YLW}
+	@echo -e ${CL_YLW}"                                           "${CL_YLW}
 	@echo -e ${CL_CYN}"Package Complete: $(TIPSY_TARGET_PACKAGE)"${CL_CYN}${CL_RST}
 
 endif    # build_ota_package
