@@ -678,13 +678,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   system_progress = 0.75
 
   script.Print("******************************************************")
-  script.Print("   ______   __     ______   ______     __  __         ")
-  script.Print("  /\__  _\ /\ \   /\  __ \ /\  ___\   /\ \_\ \        ")
-  script.Print("  \/_/\ \/ \ \ \  \ \  __/ \ \___  \  \ \____ \       ")
-  script.Print("     \ \_\  \ \_\  \ \_\    \/\_____\  \/\_____\      ")
-  script.Print("      \/_/   \/_/   \/_/     \/_____/   \/_____/      ")
-  script.Print("                                                      ")
-  script.Print("              A Drunken man's Project                 ")
+  script.Print("              Evolve ROM by Deedwar                   ")
   script.Print("******************************************************")
   script.Print(" ")
 
